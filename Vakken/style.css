@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  section {
+    height: 650px;
+  }
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 30%;
+    height: 100%;
+    background: #b1b1b1;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #d6d6d6;
+    height: 100%;
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  a {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  ul li {
+    margin-bottom: 15px;
+  }
+  h3{
+    font-size: 32px;
+}
+a:hover{
+    color: #777;
+    background-color: #d6d6d6;
+}
+img{
+    max-height: 70%;
+    margin-left: 80%;
+}
+#Active{
+    background-color: rgb(165, 165, 255);
+    color: white;
+}
+#Active:hover{
+  background-color: rgb(127, 127, 255);
+  color: #d6d6d6;
+}
+#Active2::marker{
+  content: "•"; color: black;
+}
